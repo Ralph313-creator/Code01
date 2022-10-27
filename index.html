@@ -5,45 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rappid ISP</title>
-    <link rel="stylesheet" href="dist/css/style.css">
-<body>
-    <header class="head">
-      <div class="logo-name">
-        <img src="images/logo.png" alt="logo" >
-        <h1>Rappid ISP</h1>
-      </div>
-        <nav class="nav-links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<body class="me-3">
+    <header>
+
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="30px" class="mx-2">Rappid ISP</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end text-bg-dark w-auto" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="img/logo.png" alt="logo" width="50px" class="mx-2">Rappid ISP</h5>
+              <button type="button" class="btn-close btn-close-white m-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Work</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
     </header>
-    
-        <aside>
-            
-        </aside>
-            
-        <section class="banner">
-            <div class="box"><h3>main</h3></div>
-            <div class="box1"><h4>1</h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quisquam neque asperiores culpa assumenda labore vitae voluptate hic suscipit repellat atque totam, nesciunt iusto vel aperiam, laudantium amet, molestias accusamus.</div>
-            <div class="box2"><h4>2</h4>lorem5</div>
-            <div class="box3"><h4>3</h4></div>
-            <div class="box4"><h4>4</h4></div>
-            <div class="box5"><h4>5</h4></div>
-            <div class="box6"><h4>6</h4></div>
-    
-          <div class="banner-img">
-            <img src="images/pic.jpg" alt="banner">
+      
+        <section >
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="slide1" height="10%">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide2.jpg" class="d-block w-100"  alt="slide2" height="10%">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide5.jpg" class="d-block w-100"  alt="slide3" height="10%">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="service">
+          <div class="container-fluid text-center mt-3">
+            <h1>Services</h1>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/slide1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Plan 50Mbps</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/slide2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Plan 20Mbps</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/slide5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Plan 10Mbps</small>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
       <footer>
 
       </footer>
-   
+
+      <!-- script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+
+      </script>
 </body>
 </html>
