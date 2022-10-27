@@ -1,0 +1,28 @@
+$primary-color: #fff8ea;
+$secondary-color: #9e7676;
+$trans-color: rgba(199, 199, 199, 0.24);
+
+// see through box 
+@mixin box {
+    border-top: 2px solid rgba(255, 255, 255, 0.37);
+    border-left: 2px solid rgba(255, 255, 255, 0.37);
+    box-shadow: 2px 2px 3px 1px black;
+    padding: 2px;
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;  
+    border-radius: 10px;
+    position: absolute;
+    overflow:hidden;
+    color:black;
+    background-color: $trans-color;
+    transition: all .4s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+        text-shadow:2px 2px 3px white;
+        background-color: rgba(255, 255, 255, 0.678);
+        z-index: 10;
+        box-shadow: 2px 2px 10px 3px black;
+    }
+}
