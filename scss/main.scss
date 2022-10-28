@@ -1,0 +1,42 @@
+/*
+   Author: Ralph Ocba
+*/
+
+/* BASE- Base style, variables, mixins, etc */
+@import 'base/variables';
+
+/* MODULES - Individual Site components */ 
+
+
+/*LAYOUT - Page layout styles*/
+@import 'layouts/banner';
+@import 'layouts/header'; 
+@import 'layouts/nav';
+@import 'layouts/footer';
+
+.services{
+   .col{
+      border: solid 1px;
+      margin: 10px;
+   }
+}
+
+.box {
+
+   /*value sequence width,height,x-axis,y-axis,z-index*/ 
+   .box1{
+      @include box(23%,50%,20%,30%,2);
+   }
+   .box2{
+      @include box(10%,13%,13%,25%,5);
+   }
+   .box3{
+      @include box(15%,18%,18%,15%,4);
+   }
+   .box4{
+      @include box(10%,10%,40%,76%,3);
+   }
+   .box5{
+      @include box(12%,15%,30%,79%,1);
+   }
+}

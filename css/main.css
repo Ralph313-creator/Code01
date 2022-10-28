@@ -1,1 +1,125 @@
-/*# sourceMappingURL=main.css.map */
+/*
+   Author: Ralph Ocba
+*/
+/* BASE- Base style, variables, mixins, etc */
+/*px value to rem*/
+/*Font Variable*/
+/*Color Variable*/
+/* MODULES - Individual Site components */
+/*LAYOUT - Page layout styles*/
+/*px value to rem*/
+/*Font Variable*/
+/*Color Variable*/
+.services .col {
+  border: solid 1px;
+  margin: 10px;
+}
+
+.box {
+  /*value sequence width,height,x-axis,y-axis,z-index*/
+}
+.box .box1 {
+  width: 23%;
+  height: 50%;
+  border-top: 1px solid white;
+  border-left: 1px solid rgba(255, 255, 255, 0.493);
+  background-color: rgba(186, 199, 195, 0.26);
+  position: absolute;
+  box-shadow: 3px 3px 4px 1px;
+  left: 20%;
+  top: 30%;
+  z-index: 2;
+  font-size: "0.625%";
+  transition: ease-in-out 0.5s;
+}
+.box .box1:hover {
+  color: whitesmoke;
+  transform: scale(1.2);
+  box-shadow: 3px 3px 5px 3px black;
+  background-color: #ede4e0;
+  z-index: 20;
+}
+.box .box2 {
+  width: 10%;
+  height: 13%;
+  border-top: 1px solid white;
+  border-left: 1px solid rgba(255, 255, 255, 0.493);
+  background-color: rgba(186, 199, 195, 0.26);
+  position: absolute;
+  box-shadow: 3px 3px 4px 1px;
+  left: 13%;
+  top: 25%;
+  z-index: 5;
+  font-size: "0.625%";
+  transition: ease-in-out 0.5s;
+}
+.box .box2:hover {
+  color: whitesmoke;
+  transform: scale(1.2);
+  box-shadow: 3px 3px 5px 3px black;
+  background-color: #ede4e0;
+  z-index: 20;
+}
+.box .box3 {
+  width: 15%;
+  height: 18%;
+  border-top: 1px solid white;
+  border-left: 1px solid rgba(255, 255, 255, 0.493);
+  background-color: rgba(186, 199, 195, 0.26);
+  position: absolute;
+  box-shadow: 3px 3px 4px 1px;
+  left: 18%;
+  top: 15%;
+  z-index: 4;
+  font-size: "0.625%";
+  transition: ease-in-out 0.5s;
+}
+.box .box3:hover {
+  color: whitesmoke;
+  transform: scale(1.2);
+  box-shadow: 3px 3px 5px 3px black;
+  background-color: #ede4e0;
+  z-index: 20;
+}
+.box .box4 {
+  width: 10%;
+  height: 10%;
+  border-top: 1px solid white;
+  border-left: 1px solid rgba(255, 255, 255, 0.493);
+  background-color: rgba(186, 199, 195, 0.26);
+  position: absolute;
+  box-shadow: 3px 3px 4px 1px;
+  left: 40%;
+  top: 76%;
+  z-index: 3;
+  font-size: "0.625%";
+  transition: ease-in-out 0.5s;
+}
+.box .box4:hover {
+  color: whitesmoke;
+  transform: scale(1.2);
+  box-shadow: 3px 3px 5px 3px black;
+  background-color: #ede4e0;
+  z-index: 20;
+}
+.box .box5 {
+  width: 12%;
+  height: 15%;
+  border-top: 1px solid white;
+  border-left: 1px solid rgba(255, 255, 255, 0.493);
+  background-color: rgba(186, 199, 195, 0.26);
+  position: absolute;
+  box-shadow: 3px 3px 4px 1px;
+  left: 30%;
+  top: 79%;
+  z-index: 1;
+  font-size: "0.625%";
+  transition: ease-in-out 0.5s;
+}
+.box .box5:hover {
+  color: whitesmoke;
+  transform: scale(1.2);
+  box-shadow: 3px 3px 5px 3px black;
+  background-color: #ede4e0;
+  z-index: 20;
+}/*# sourceMappingURL=main.css.map */

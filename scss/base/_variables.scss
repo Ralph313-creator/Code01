@@ -1,0 +1,13 @@
+/*px value to rem*/
+@function remy($pxsize) {
+  @return ($pxsize/16) + '%';
+}
+
+/*Font Variable*/
+$font-family: Arial, Helvetica, sans-serif;
+
+/*Color Variable*/
+$primary-color: #ede4e0;
+$secondary-color: #c8dbbe;
+$light-color: #9f8772;
+$dark-color: #665a48;

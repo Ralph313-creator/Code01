@@ -1,0 +1,24 @@
+@import '../base/variables';
+
+@mixin box($width, $height, $x-axis, $y-axis, $z) {
+  width: $width;
+  height: $height;
+  border-top: 1px solid white;
+  border-left: 1px solid rgba(255, 255, 255, 0.493);
+    background-color: rgba(186, 199, 195, 0.26);
+  position: absolute;
+  box-shadow: 3px 3px 4px 1px;
+  left: $x-axis;
+  top: $y-axis;
+  z-index: $z;
+  font-size: remy(10);
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    color: whitesmoke;
+    transform: scale(1.2);
+    box-shadow: 3px 3px 5px 3px black;
+    background-color: $primary-color;
+    z-index: 20;
+  }
+}
