@@ -3,40 +3,58 @@
 */
 
 /* BASE- Base style, variables, mixins, etc */
-@import 'base/variables';
+@import "base/variables";
 
-/* MODULES - Individual Site components */ 
-
+/* MODULES - Individual Site components */
 
 /*LAYOUT - Page layout styles*/
-@import 'layouts/banner';
-@import 'layouts/header'; 
-@import 'layouts/nav';
-@import 'layouts/footer';
+@import "layouts/banner";
+@import "layouts/header";
+@import "layouts/nav";
+@import "layouts/footer";
 
-.services{
-   .col{
-      border: solid 1px;
-      margin: 10px;
-   }
+.services {
+  .col {
+    border: solid 1px;
+    margin: 10px;
+  }
 }
 
 .box {
+  /*value sequence width,height,x-axis,y-axis,z-index*/
+  .box1 {
+    @include box(18%, 40%, 19.5%, 29%, 4);
+  }
+  .box2 {
+    @include box(10%, 17%, 12%, 21%, 5);
+  }
+  .box3 {
+    @include box(8%, 10%, 20%, 16%, 2);
+  }
+  .box4 {
+    @include box(10%, 12%, 36%, 60%, 3);
+  }
+  .box5 {
+    @include box(10%, 15%, 30%, 65%, 5);
+  }
+  .box6 {
+    @include box(9%, 13%, 9%, 28%, 1);
+  }
+  .box7 {
+    @include box(9%, 15%, 39%, 25%, 5);
+  }
+  .box8 {
+    @include box(9%, 14%, 8%, 50%, 5);
+  }
+}
 
-   /*value sequence width,height,x-axis,y-axis,z-index*/ 
-   .box1{
-      @include box(23%,50%,20%,30%,2);
-   }
-   .box2{
-      @include box(10%,13%,13%,25%,5);
-   }
-   .box3{
-      @include box(15%,18%,18%,15%,4);
-   }
-   .box4{
-      @include box(10%,10%,40%,76%,3);
-   }
-   .box5{
-      @include box(12%,15%,30%,79%,1);
-   }
+#banner {
+  position: relative;
+
+  background-image: linear-gradient($primary-color, $secondary-color);
+}
+
+#server {
+  background-color: rgba(92, 92, 92, 0.425);
+  padding: 10px;
 }

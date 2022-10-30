@@ -3,22 +3,28 @@
 @mixin box($width, $height, $x-axis, $y-axis, $z) {
   width: $width;
   height: $height;
-  border-top: 1px solid white;
-  border-left: 1px solid rgba(255, 255, 255, 0.493);
-    background-color: rgba(186, 199, 195, 0.26);
+  background-color: rgba(186, 199, 195, 0.397);
+  text-align: center;
   position: absolute;
-  box-shadow: 3px 3px 4px 1px;
+  box-shadow: 3px 3px 6px 4px;
+  padding: 20px 10px;
   left: $x-axis;
   top: $y-axis;
   z-index: $z;
-  font-size: remy(10);
-  transition: ease-in-out 0.5s;
+  font-size: remy(20);
+  border-radius: 10px;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.438);
+  border-left: 1px solid rgba(255, 255, 255, 0.438);
+  transition: ease-in-out 0.4s;
 
   &:hover {
+    
+    overflow: auto;
     color: whitesmoke;
     transform: scale(1.2);
-    box-shadow: 3px 3px 5px 3px black;
-    background-color: $primary-color;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.507);
+    background-color: rgba(42, 44, 43, 0.452);
     z-index: 20;
   }
 }

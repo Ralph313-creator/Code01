@@ -1,6 +1,7 @@
 /*px value to rem*/
 @function remy($pxsize) {
-  @return ($pxsize/16) + '%';
+  $remVal: ($pxsize/16) + rem;
+  @return $remVal;
 }
 
 /*Font Variable*/
