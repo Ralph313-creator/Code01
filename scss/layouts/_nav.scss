@@ -1,0 +1,61 @@
+@import "../base/mediaQuery";
+@import "../base/variables";
+
+.navbar {
+  background-color: transparent !important;
+  .navbar-brand {
+    color: white;
+    font-weight: 500;
+    font-size: remy(20);
+    text-shadow: 3px 3px 4px black;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .navbar-toggler {
+    background-color: whitesmoke;
+  }
+  .nav-item {
+    position: relative;
+    margin: 0 5px;
+    .nav-link {
+      text-transform: uppercase;
+      position: relative;
+      font-weight: 500;
+      color: white;
+      text-shadow: 3px 3px 4px black;
+      font-size: remy(18);
+      -webkit-text-stroke: black 0.3px;
+      transition: ease-in-out 500ms;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: dodgerblue;
+      transition: ease-in-out 500ms;
+      transform: scale(0);
+    }
+    &:hover::before,
+    &:focus:before,
+    &:active:before {
+      transform: scale(1);
+    }
+  }
+}
+
+@include respond-below(lg) {
+  .navbar-nav {
+    transition: all 500ms;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 10px 0 0 10px;
+    width: 150px;
+    padding: 10px 0;
+    position: relative;
+    right: 0;
+  }
+}

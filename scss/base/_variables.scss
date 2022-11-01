@@ -1,6 +1,6 @@
 /*px value to rem*/
 @function remy($pxsize) {
-  $remVal: ($pxsize/16) + rem;
+  $remVal: ($pxsize/16) + em;
   @return $remVal;
 }
 

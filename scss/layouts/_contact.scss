@@ -1,0 +1,27 @@
+@import "../base/variables";
+
+.offcanvas {
+  height: 400px !important;
+}
+.offcanvas-header {
+  h5 {
+    margin: auto;
+  }
+}
+.offcanvas-body {
+  display: flex;
+  .container {
+  }
+  .contact-icon {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+
+    div {
+      font-size: remy(15);
+      display: flex;
+      flex-wrap: wrap;
+      width: auto;
+    }
+  }
+}
