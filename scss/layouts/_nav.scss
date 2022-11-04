@@ -1,0 +1,46 @@
+.navbar {
+  background-color: transparent !important;
+  .navbar-brand {
+    color: white;
+    font-weight: 500;
+    font-size: remy(20);
+    text-shadow: 3px 3px 4px black;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .navbar-toggler {
+    background-color: whitesmoke;
+  }
+  .nav-item {
+    position: relative;
+    margin: 0 5px;
+    .nav-link {
+      text-transform: uppercase;
+      position: relative;
+      font-weight: 500;
+      color: rgb(255, 255, 255);
+      font-size: remy(18);
+      transition: ease-in-out 500ms;
+      -webkit-text-stroke: 0.2px black;
+      text-shadow: 3px 3px 5px black;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 10px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 5px;
+      background-color: dodgerblue;
+      transition: ease-in-out 800ms;
+      transform: scalex(0);
+    }
+    &:hover::before,
+    &:focus:before,
+    &:active:before {
+      transform: scalex(1);
+    }
+  }
+}

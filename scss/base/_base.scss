@@ -1,0 +1,15 @@
+//  Variables
+$font-family: Arial, Helvetica, sans-serif;
+$primary-color: #ede4e0;
+$secondary-color: #c8dbbe;
+$light-color: #9f8772;
+$dark-color: #665a48;
+
+body {
+  position: relative;
+}
+
+@function remy($pxsize) {
+  $remVal: ($pxsize/16) + em;
+  @return $remVal;
+}
