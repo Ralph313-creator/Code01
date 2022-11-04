@@ -10,6 +10,6 @@ body {
 }
 
 @function remy($pxsize) {
-  $remVal: ($pxsize/16) + em;
+  $remVal: ($pxsize/16) + rem;
   @return $remVal;
 }
