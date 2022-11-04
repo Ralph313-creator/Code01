@@ -2,60 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rappid ISP</title>
-  <!-- HTML & CSS CDN -->
+  <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- animation CDN -->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- my Costum CSS -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- My Costum JS -->
-  <link rel="script" href="js/main.js">
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-  
-    <header>
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <!-- animation CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- my Costum CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!--Fontawsome Icon js -->
+  <script defer src="https://kit.fontawesome.com/13cfaa15ba.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</head>
 
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="50px" class="mx-2">Rappid ISP</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#server">Our Server</a>
-              </li>
-              <li class="nav-item text-center ">
-                <a class="nav-link" href="#internet">Fiber Internet</a>
-              </li>
-              <li class="nav-item text-center ">
-                <a class="nav-link" href="#">Testimonials</a>
-              </li>
-              <li class="nav-item text-center ">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link" href="#offcanvasBottom" data-bs-toggle="offcanvas">Contact</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="50px" class="mx-2" />Rappid
+          ISP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#features">Our Server</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="price.html">Plan Offered</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="testify.html">Testimonials</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#offcanvasBottom" data-bs-toggle="offcanvas">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </header>
 
-    </header>
-    <main>
-<!-- lading Page -->
+  <main>
+    <!-- landing Page -->
     <section id="banner">
-    
-      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="carousel" class="carousel carousel-def slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
             aria-label="Slide 1"></button>
@@ -64,256 +68,389 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/slide1.jpg" class="img-fluid w-100 h-25" alt="slide1">
-            <div class="box">
-              <div class="box1 animate__animated animate__backInRight">We serve the public conversation.
-                It matters to us that people have a free and safe space to  </div>
-              <div class="box2 animate__animated animate__bounceInLeft">box 2</div>
-              <div class="box3 animate__animated animate__bounceInRight">box 3</div>
-              <div class="box4 animate__animated animate__backInRight">box 4</div>
-              <div class="box5 animate__animated animate__backInRight">box 5</div>
-              <div class="box7 animate__animated animate__backInLeft">box 7</div>
-              <div class="box8 animate__animated animate__backInRight">box 8</div>
+            <img src="img/ban7.jpg" class="img-fluid w-100" alt="slide1" />
+            <div class="carousel-caption ban-caption">
+              <h5 class="animate__animated animate__backInLeft animate__delay-1s">Open your mind to better
+                possibilities
+              </h5>
+              <p class="animate__animated animate__backInRight animate__delay-1.5s">Stay connected, stay informed, stay
+                inspired</p>
+              <span><a class="animate__animated animate__backInLeft animate__delay-2s" href="#features">Learn
+                  More</a></span>
+              <span><a class="animate__animated animate__backInRight animate__delay-2s" href="about.html">About
+                  Us</a></span>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/slide2.jpg" class="img-fluid w-100 " alt="slide2">
-            <div class="box">
-              <div class="box1 animate__animated animate__backInRight">We serve the public conversation.
-                It matters to us that people have a free and safe space to talk. That’s why we’re constantly improving our rules and processes, technology and tools. 
-                We’re not perfect — that’s why we listen to you, the people on Twitter. It’s also why we work to be as transparent as possible.
-                Having a global impact
-                In 2021, we published our first Global Impact Report. We're committed to sharing the work we know is important to the people we serve. </div>
-              <div class="box2 animate__animated animate__bounceInLeft">box 2</div>
-              <div class="box3 animate__animated animate__bounceInRight">box 3</div>
-              <div class="box4 animate__animated animate__backInRight">box 4</div>
-              <div class="box5 animate__animated animate__backInRight">box 5</div>
-              <div class="box7 animate__animated animate__backInLeft">box 7</div>
-              <div class="box8 animate__animated animate__backInRight">box 8</div>
+            <img src="img/ban5.webp" class="img-fluid w-100" alt="slide2" />
+            <div class="carousel-caption ban-caption">
+              <h5 class="animate__animated animate__backInLeft animate__delay-1s">We Do Telecom Differently
+              </h5>
+              <p class="animate__animated animate__backInRight animate__delay-1.5s">Stay connected, stay informed, stay
+                inspired</p>
+              <span><a class="animate__animated animate__backInLeft animate__delay-2s" href="#features">Learn
+                  More</a></span>
+              <span><a class="animate__animated animate__backInRight animate__delay-2s" href="about.html">About
+                  Us</a></span>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/slide5.jpg" class="img-fluid w-100" alt="slide3">
-            <div class="box">
-              <div class="box1 animate__animated animate__backInRight">We serve the public conversation.
-                It matters to us that people have a free and safe space to talk. That’s why we’re constantly improving our rules and processes, technology and tools. 
-                We’re not perfect — that’s why we listen to you, the people on Twitter. It’s also why we work to be as transparent as possible.
-                Having a global impact
-                In 2021, we published our first Global Impact Report. We're committed to sharing the work we know is important to the people we serve. </div>
-              <div class="box2 animate__animated animate__bounceInLeft">box 2</div>
-              <div class="box3 animate__animated animate__bounceInRight">box 3</div>
-              <div class="box4 animate__animated animate__backInRight">box 4</div>
-              <div class="box5 animate__animated animate__backInRight">box 5</div>
-              <div class="box7 animate__animated animate__backInLeft">box 7</div>
-              <div class="box8 animate__animated animate__backInRight">box 8</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="server">
-
-      <h1 class="display-1 text-center mt-3">Our Server</h1>
-      <div class="card mb-3">
-              <div class=" row g-0">
-        <div class="col-md-4">
-          <img src="img/serverpic.jpeg" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="card mb-3">
-              <div class=" row g-0">
-        <div class="col-md-4">
-          <img src="img/fiber.png" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-    </section>
-
-    <section id="internet" class="m-2">
-
-      <h1 class="display-1 text-center">Our Home Internet</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/slide1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Plan 50Mbps</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/slide2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Plan 20Mbps</small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/slide5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Plan 10Mbps</small>
+            <img src="img/ban4.webp" class="img-fluid w-100" alt="slide3" />
+            <div class="carousel-caption ban-caption">
+              <h5 class="animate__animated animate__backInLeft animate__delay-1s">Open the lines up for better
+                communication
+              </h5>
+              <p class="animate__animated animate__backInRight animate__delay-1.5s">Stay connected, stay informed, stay
+                inspired</p>
+              <span><a class="animate__animated animate__backInLeft animate__delay-2s" href="#features">Learn
+                  More</a></span>
+              <span><a class="animate__animated animate__backInRight animate__delay-2s" href="about.html">About
+                  Us</a></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services">
-
-      <div class="container text-center border border-danger p-3">
-        <div class="row align-items-start">
-          <div class="col">
-            One of 1 columns
+    <!-- Features section-->
+    <section class="py-5" id="features">
+      <div class="container px-5 my-5">
+        <div class="row gx-5">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h2 class="fw-bolder mb-0">
+              We’re here to be your telecom provider today, tomorrow, and beyond.
+            </h2>
           </div>
-          <div class="col">
-            One of 2 columns
-          </div>
-          <div class="col">
-            One of 3 columns
-          </div>
-        </div>
-      </div>
-      </div>
-
-    </section>
-
-    <section>
-      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" data-bs-scroll="true" aria-labelledby="offcanvasBottomLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Contact US</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-          <div class="offcanvas-body container">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla corporis exercitationem saepe sunt sapie</p> 
-           <div class="container">
-            <div class="row">
-
-              <div class="contact-info">
-
-                <div class="contact-info-item">
-                  <div class="contact-info-icon">
-                    <i class="fa-solid fa-map-location"></i>
-                  </div>
-                  <div class="contact-info-content">
-                    <h4>Address</h4>
-                    <p>Lorem ipsum dolor<br>sit amet.</p>
-                  </div>
+          <div class="col-lg-8">
+            <div class="row gx-5 row-cols-1 row-cols-md-2">
+              <div class="col mb-5 h-100">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                  <i class="fa-solid fa-jet-fighter"></i>
                 </div>
-
-                <div class="contact-info-item">
-                  <div class="contact-info-icon">
-                    <i class="fa-solid fa-phone"></i>
-                  </div>
-                  <div class="contact-info-content">
-                    <h4>Phone</h4>
-                    <p>085-809-2712</p>
-                  </div>
+                <h2 class="h5">Performance</h2>
+                <p class="mb-0">
+                  The Rappid Data Center provides you the performance and
+                  reliability you can count on with a 99.982% (Phil. Site 8)
+                  and 99.741% facility uptime guarantee. Work with highly
+                  trained network and facilities engineers and benefit from
+                  their expertise in monitoring data and server systems around
+                  the clock
+                </p>
+              </div>
+              <div class="col mb-5 h-100">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                  <i class="fa-regular fa-handshake"></i>
                 </div>
-
-                <div class="contact-info-item">
-                  <div class="contact-info-icon">
-                    <i class="fa-solid fa-envelope"></i>
-                  </div>
-                  <div class="contact-info-content">
-                    <h4>Email</h4>
-                    <p>example@gmail.com</p>
+                <h2 class="h5">Reliability</h2>
+                <p class="mb-0">
+                  Experience security and site reliability with facilities
+                  offering redundant systems such as Uninterruptible Power
+                  Supply (UPS), precision air cooling, fire suppression, and
+                  more. Explore a wide range of solutions such as ethernet,
+                  leased line, frame relay, and more to enjoy elevated
+                  connectivity.
+                </p>
+              </div>
+              <div class="col mb-5 mb-md-0 h-100">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                  <i class="fa-solid fa-user-secret"></i>
+                </div>
+                <h2 class="h5">High Security</h2>
+                <p class="mb-0">
+                  Rely on extremely high-security measures from authentication
+                  to points of entry to controlled and supervised access, and
+                  more.
+                </p>
+              </div>
+              <div class="col h-100">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                  <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <h2 class="h5">Highly Compliant</h2>
+                <p class="mb-0">
+                  Adhere to compliance and regulation standards such as
+                  International Organization of Standardization (ISO), Payment
+                  Card Industry-Data Security Standard (PCI-DSS) and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section-->
+    <div class="py-5 bg-light">
+      <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-10 col-xl-7">
+            <div class="text-center">
+              <div class="fs-4 mb-4 fst-italic">
+                “Embrace what you don’t know, especially in the beginning,
+                because what you don’t know can become your greatest asset. It
+                ensures that you will absolutely be doing things different
+                from everybody else.”
+              </div>
+              <div class="d-flex align-items-center justify-content-center">
+                <img class="rounded-circle me-3" src="img/ceo.jpg" alt="..." />
+                <div class="fw-bold">
+                  Juan Ato
+                  <span class="fw-bold text-primary mx-1">/</span>
+                  CEO, Rappid ISP
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog preview section-->
+    <section class="py-5">
+      <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6">
+            <div class="text-center">
+              <h2 class="fw-bolder">From our Blog</h2>
+              <p class="lead fw-normal text-muted mb-5">
+                Rappid , the most reliable mobile network in the Philippines,
+                continues to bring many firsts that help make every day better
+                for every Filipino. To showcase the different ways that Rappid
+                uplifts lives, the company brought together a series of
+                exciting
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5">
+          <div class="col-lg-4 mb-5">
+            <div class="card h-100 shadow border-0">
+              <img class="card-img-top" src="img/server2.jpg" alt="..." />
+              <div class="card-body p-4">
+                <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                  News
+                </div>
+                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                  <h5 class="card-title mb-3">Seamless Gaming Experience</h5>
+                </a>
+                <p class="card-text mb-0">
+                  Rappid Telecommunity, the country’s newest telco player
+                  continuously accelerates its service to provide stronger
+                  connectivity to various communities nationwide. As a part of
+                  its mission to enrich Filipino lives through digital
+                  innovations, Rappid agreed to provide an easy gaming
+                  experience with UniPin. The partnership kicks off from
+                  November 5, 2022.
+                </p>
+              </div>
+              <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                <div class="d-flex align-items-end justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div class="small">
+                      <div class="text-muted">
+                        March 12, 2022 &middot; 6 min read
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div class="contact-form">
-                <form id="contact-form"></form>
-                <h2>Send Message</h2>
-                <div class="input-box">
-                  <input type="text" required="true">
-                  <span>Full Name</span>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="card h-100 shadow border-0">
+              <img class="card-img-top" src="img/server.jpg" alt="..." />
+              <div class="card-body p-4">
+                <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                  Media
                 </div>
-
-                <div class="input-box">
-                  <input type="email" required="true">
-                  <span>Email</span>
+                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                  <h5 class="card-title mb-3">Getting to know</h5>
+                </a>
+                <p class="card-text mb-0">
+                  After Rappid Telecommunity’s successful launch in key areas
+                  in Visayas and Mindanao, initial users have been raving
+                  about the speed and reliability of the country’s newest
+                  telco player. Last April 16, Rappid announced its
+                  availability in 21 more cities, including certain areas in
+                  Luzon that heightened every Filipino’s anticipation to
+                  experience the difference that Rappid can offer. Currently,
+                  subscribers can try Rappid's 50Mbps High-Speed internet for
+                  only PHP 1000 valid for 30-days.
+                </p>
+              </div>
+              <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                <div class="d-flex align-items-end justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div class="small">
+                      <div class="text-muted">
+                        March 23, 2022 &middot; 4 min read
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="input-box">
-                  <textarea required="true" ></textarea>
-                  <span>Your Message...</span>
-                </div>
-                <div class="input-box"></div>
-                <button type="submit">Send</button>
               </div>
             </div>
-           </div>
-        
-              
-
-            
-              
-
-
-
-
-
-
-
-
-
-
-
-
-
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="card h-100 shadow border-0">
+              <img class="card-img-top" src="img/server3.jpeg" alt="..." />
+              <div class="card-body p-4">
+                <div class="badge bg-primary bg-gradient rounded-pill mb-2">
+                  News
+                </div>
+                <a class="text-decoration-none link-dark stretched-link" href="#!">
+                  <h5 class="card-title mb-3">Rappid ISP expands service</h5>
+                </a>
+                <p class="card-text mb-0">
+                  Manila, Philippines, April 16, 2021 - Rappid Telecommunity,
+                  the third major player in the Philippine telecommunications
+                  industry, after a successful commercial launch last March 8
+                  in 15 selected cities in Visayas and Mindanao, announced the
+                  inclusion of 21 more cities starting April 16, 2021. Atty.
+                  Juan Dimano, the Chief Administrative Officer of Rappid,
+                  said, "We are very excited to announce that in just a few
+                  weeks after our commercial launch in Cebu and Davao, more
+                  Filipinos can now experience stronger and reliable
+                  connectivity with Rappid's Luzon expansion."
+                </p>
+              </div>
+              <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                <div class="d-flex align-items-end justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <div class="small">
+                      <div class="text-muted">
+                        April 2, 2022 &middot; 10 min read
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-          </div>  
+          </div>
+        </div>
+        <!-- Call to action-->
+        <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+          <div
+            class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+            <div class="mb-4 mb-xl-0">
+              <div class="fs-3 fw-bold text-white">
+                GET TO KNOW OUR LATEST UPDATES
+              </div>
+              <div class="text-white-50">
+                Sign up for our newsletter for the latest updates.
+              </div>
+            </div>
+            <div class="ms-xl-4">
+              <div class="input-group mb-2">
+                <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..."
+                  aria-describedby="button-newsletter" />
+                <button class="btn btn-outline-light" id="button-newsletter" type="button">
+                  Sign up
+                </button>
+              </div>
+              <div class="small text-white-50">
+                We care about privacy, and will never share your data.
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
-
   </main>
 
-  <footer>
+  <!-- Contact US -->
+  <section>
+    <div class="offcanvas offcanvas-bottom" data-bs-backdrop="false" tabindex="-1" id="offcanvasBottom"
+      data-bs-scroll="true" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fw-bolder" id="offcanvasBottomLabel">
+          Contact Us
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body container">
+        <div class="intro">
+          <p>We welcome your questions & ideas</p>
+        </div>
+        <div class="row row-cols-md-2 justify-content-center">
+          <div class="contact-info col-12 col-md-4">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-map-location fa-4x"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Address</h4>
+                <p>
+                  Robert Robertson,<br />
+                  NW Bobcat Lane, St. <br />
+                  Robert, MO 65584-5678.
+                </p>
+              </div>
+            </div>
 
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone fa-4x"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Phone</h4>
+                <p>085 - 8809 - 92712</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope fa-4x"></i>
+              </div>
+              <div class="contact-info-content">
+                <h4>Email</h4>
+                <p>example@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form col-12 col-md-4">
+            <form class="form-container">
+              <div class="form-title">
+                <h4>Message</h4>
+              </div>
+              <div class="row justify-content-center">
+                <div class="mx-2 col">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="mx-2 col">
+                  <label for="Lname" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="Lname" />
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="Message" class="form-label">Message</label>
+                <textarea class="form-control" id="Message" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer-->
+  <footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0 text-white">
+            Copyright &copy; 2022 RappidISP.net. All Rights Reserved.
+          </div>
+        </div>
+        <div class="col-auto">
+          <a class="link-light small" href="#!">Privacy</a>
+          <span class="text-white mx-1">&middot;</span>
+          <a class="link-light small" href="#!">Terms</a>
+        </div>
+      </div>
+    </div>
   </footer>
-
-  <!--bootstrap script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-    </script>
-  <!-- font Awsome -->
-  <script src="https://kit.fontawesome.com/13cfaa15ba.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

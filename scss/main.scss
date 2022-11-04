@@ -2,26 +2,14 @@
    Author: Ralph Ocba
 */
 
+// Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-/* BASE- Base style, variables, mixins, etc */
-@import "base/variables";
+@import "base/base";
 @import "base/mediaQuery";
-
-/* MODULES - Individual Site components */
-
-/*LAYOUT - Page layout styles*/
 @import "layouts/nav";
 @import "layouts/banner";
 @import "layouts/_contact";
-@import "layouts/footer";
-
-.services {
-  .col {
-    border: solid 1px;
-    margin: 10px;
-  }
-}
 
 .box {
   z-index: 1;
@@ -52,13 +40,94 @@
   }
 }
 
-#banner {
-  // position: relative;
-
-  background-image: linear-gradient($primary-color, $secondary-color);
+.carousel-def::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.438);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.carousel-indicators {
+  z-index: 3;
+}
+.ban-caption {
+  top: 40%;
+  z-index: 2;
+  h5 {
+    text-transform: uppercase;
+    font-size: remy(45);
+    letter-spacing: 2px;
+  }
+  span {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+  }
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #0d6efd;
+    color: rgb(0, 0, 0);
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: visible;
+    background: linear-gradient(
+      to right,
+      rgb(0, 60, 255) 50%,
+      rgba(0, 0, 0, 0.699) 50%
+    );
+    background-size: 200% 100%;
+    transition: all 0.8s;
+    &:hover {
+      background-position: bottom right;
+      color: white;
+      border: none;
+      border: 2px solid white;
+      box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+  }
 }
 
-#server {
-  background-color: rgba(92, 92, 92, 0.425);
-  padding: 10px;
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+/*Breakpoint changes */
+@include respond-below(lg) {
+  .navbar-nav {
+    transition: all 500ms;
+    width: remy(200);
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    padding: 10px 0;
+    position: relative;
+    right: 0;
+  }
+
+  .offcanvas {
+    height: 300px !important;
+    background-color: rgba(82, 82, 82, 0.658);
+  }
+}
+
+@include respond-below(sm) {
+  .navbar-nav {
+    transition: all 500ms;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    padding: 10px 0;
+    position: relative;
+    right: 0;
+  }
 }

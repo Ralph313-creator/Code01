@@ -1,6 +1,4 @@
-@import '../base/variables';
-
-@mixin box($width, $height, $x-axis, $y-axis, $z,$delay) {
+@mixin box($width, $height, $x-axis, $y-axis, $z, $delay) {
   width: $width;
   height: $height;
   background-color: rgba(186, 199, 195, 0.397);
@@ -17,7 +15,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.438);
   border-left: 1px solid rgba(255, 255, 255, 0.438);
   animation-delay: $delay;
-  transition:all ease-in-out 500ms !important;
+  transition: all ease-in-out 500ms !important;
 
   &:hover {
     overflow: auto;
