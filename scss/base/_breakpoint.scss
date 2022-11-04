@@ -1,0 +1,110 @@
+@import "../base/base";
+
+// body::before {
+//   content: "size";
+//   position: fixed;
+//   top: 10rem;
+//   right: 0;
+//   text-transform: uppercase;
+//   background-color: aqua;
+//   z-index: 20;
+//   font-size: 3rem;
+// }
+
+@include respond-below(xxl) {
+  // body::before {
+  //   content: "xxl";
+  // }
+}
+
+@include respond-below(xl) {
+  // body::before {
+  //   content: "xl";
+  // }
+  .response {
+    font-size: remy(13);
+    top: 25%;
+    span {
+      width: 10px;
+      a {
+        font-size: remy(13);
+      }
+    }
+  }
+}
+
+@include respond-below(lg) {
+  // body::before {
+  //   content: "lg";
+  // }
+  .navbar-nav {
+    transition: all 500ms;
+    width: remy(200);
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    padding: 10px 0;
+    position: relative;
+    right: 0;
+  }
+  .response {
+    h5 {
+      font-size: remy(25);
+    }
+    top: 25%;
+    span {
+      width: 10px;
+      a {
+        font-size: remy(13);
+      }
+    }
+  }
+  .box {
+    font-size: remy(12);
+  }
+  .offcanvas {
+    height: 250px !important;
+  }
+}
+
+@include respond-below(md) {
+  // body::before {
+  //   content: "md";
+  // }
+  .response {
+    font-size: remy(10);
+  }
+}
+
+@include respond-below(sm) {
+  // body::before {
+  //   content: "sm";
+  // }
+  .navbar-nav {
+    transition: all 500ms;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 10px;
+    padding: 10px 0;
+    position: relative;
+    right: 0;
+  }
+  .response {
+    h5 {
+      font-size: remy(25);
+    }
+    top: 20%;
+    span {
+      width: 60%;
+      margin: auto;
+      line-height: 1;
+      a {
+        font-size: remy(10);
+      }
+    }
+  }
+  .carousel {
+    img {
+      height: 250px;
+    }
+  }
+}
