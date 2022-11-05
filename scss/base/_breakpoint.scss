@@ -62,7 +62,7 @@
     font-size: remy(12);
   }
   .offcanvas {
-    height: 250px !important;
+    height: 400px !important;
   }
 }
 
@@ -72,6 +72,9 @@
   // }
   .response {
     font-size: remy(10);
+  }
+  .offcanvas {
+    height: 250px !important;
   }
 }
 
@@ -90,7 +93,7 @@
   }
   .response {
     h5 {
-      font-size: remy(25);
+      font-size: remy(15);
     }
     top: 20%;
     span {
@@ -104,7 +107,7 @@
   }
   .carousel {
     img {
-      height: 250px;
+      height: 300px;
     }
   }
 }
